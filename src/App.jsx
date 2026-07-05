@@ -9,17 +9,15 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#0b0c10]">
+    <div className="min-h-screen w-full bg-[#0b0c10]">
       <Nav />
-      <div className="max-w-5xl mx-auto border-x border-white/10">
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Contact />
-        <Footer />
-      </div>
+      <Hero />
+      <About />
+      <Experience />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
     </div>
   );
 }

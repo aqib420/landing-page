@@ -33,42 +33,44 @@ function ProjectCard({ project }) {
 
 export default function Projects() {
   return (
-    <section id="projects" className="px-6 py-24 border-t border-white/10">
-      <p className="font-mono text-accent-light text-sm mb-2">03. Projects</p>
-      <h2 className="text-3xl font-semibold text-white mb-4">Featured Work</h2>
-      <p className="text-gray-400 max-w-2xl mb-12 text-sm leading-relaxed">
-        A selection of projects spanning applied ML/NLP, backend engineering,
-        and DevOps. Source for all of these is public on GitHub.
-      </p>
-      <div className="grid sm:grid-cols-2 gap-6">
-        {projects.map((p) => (
-          <ProjectCard key={p.repo} project={p} />
-        ))}
-      </div>
+    <section id="projects" className="py-24 border-t border-white/10">
+      <div className="max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-16">
+        <p className="font-mono text-accent-light text-sm mb-2">03. Projects</p>
+        <h2 className="text-3xl font-semibold text-white mb-4">Featured Work</h2>
+        <p className="text-gray-400 max-w-2xl mb-12 text-sm leading-relaxed">
+          A selection of projects spanning applied ML/NLP, backend engineering,
+          and DevOps. Source for all of these is public on GitHub.
+        </p>
+        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+          {projects.map((p) => (
+            <ProjectCard key={p.repo} project={p} />
+          ))}
+        </div>
 
-      <h3 className="text-xl font-semibold text-white mt-16 mb-6">
-        Additional Research Projects
-      </h3>
-      <div className="grid sm:grid-cols-2 gap-6">
-        {keyResearchProjects.map((p) => (
-          <div key={p.title} className="rounded-xl border border-white/10 p-6">
-            <h4 className="text-white font-medium">{p.title}</h4>
-            <p className="text-gray-400 text-sm mt-2 leading-relaxed">
-              {p.description}
-            </p>
-          </div>
-        ))}
-      </div>
+        <h3 className="text-xl font-semibold text-white mt-16 mb-6">
+          Additional Research Projects
+        </h3>
+        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+          {keyResearchProjects.map((p) => (
+            <div key={p.title} className="rounded-xl border border-white/10 p-6">
+              <h4 className="text-white font-medium">{p.title}</h4>
+              <p className="text-gray-400 text-sm mt-2 leading-relaxed">
+                {p.description}
+              </p>
+            </div>
+          ))}
+        </div>
 
-      <div className="mt-12 text-center">
-        <a
-          href={`${profile.github}?tab=repositories`}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-block px-5 py-3 rounded-lg border border-white/15 text-gray-200 text-sm font-medium hover:border-white/40 transition-colors"
-        >
-          View all repositories on GitHub →
-        </a>
+        <div className="mt-12 text-center">
+          <a
+            href={`${profile.github}?tab=repositories`}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block px-5 py-3 rounded-lg border border-white/15 text-gray-200 text-sm font-medium hover:border-white/40 transition-colors"
+          >
+            View all repositories on GitHub →
+          </a>
+        </div>
       </div>
     </section>
   );
