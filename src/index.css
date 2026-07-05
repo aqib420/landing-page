@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, Consolas, monospace;
+  --color-accent: #7c3aed;
+  --color-accent-light: #a78bfa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: #0b0c10;
+  color: #e5e7eb;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: white;
+}
