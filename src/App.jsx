@@ -1,5 +1,6 @@
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
+import Demo from "./components/Demo";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
@@ -12,6 +13,7 @@ export default function App() {
     <div className="min-h-screen w-full bg-[#0b0c10]">
       <Nav />
       <Hero />
+      <Demo />
       <About />
       <Experience />
       <Projects />

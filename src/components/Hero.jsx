@@ -25,8 +25,14 @@ export default function Hero() {
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
           <a
-            href="#projects"
+            href="#demo"
             className="px-5 py-3 rounded-lg bg-accent text-white text-sm font-medium hover:bg-accent-light transition-colors"
+          >
+            Watch Demo
+          </a>
+          <a
+            href="#projects"
+            className="px-5 py-3 rounded-lg border border-white/15 text-gray-200 text-sm font-medium hover:border-white/40 transition-colors"
           >
             View Projects
           </a>
