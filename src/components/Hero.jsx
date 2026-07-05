@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="min-h-[92vh] flex flex-col justify-center px-6 max-w-5xl mx-auto relative overflow-hidden"
+      className="min-h-[92vh] flex flex-col justify-center px-6 relative overflow-hidden"
     >
       <div
         aria-hidden

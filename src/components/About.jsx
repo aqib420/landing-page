@@ -2,7 +2,7 @@ import { education } from "../data/content";
 
 export default function About() {
   return (
-    <section id="about" className="px-6 max-w-5xl mx-auto py-24 border-t border-white/10">
+    <section id="about" className="px-6 py-24 border-t border-white/10">
       <p className="font-mono text-accent-light text-sm mb-2">01. About</p>
       <h2 className="text-3xl font-semibold text-white mb-10">Background</h2>
       <div className="grid sm:grid-cols-2 gap-10">

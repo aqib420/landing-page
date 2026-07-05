@@ -11,13 +11,15 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0b0c10]">
       <Nav />
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
+      <div className="max-w-5xl mx-auto border-x border-white/10">
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

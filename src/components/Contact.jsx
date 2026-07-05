@@ -2,7 +2,7 @@ import { profile } from "../data/content";
 
 export default function Contact() {
   return (
-    <section id="contact" className="px-6 max-w-5xl mx-auto py-24 border-t border-white/10 text-center">
+    <section id="contact" className="px-6 py-24 border-t border-white/10 text-center">
       <p className="font-mono text-accent-light text-sm mb-2">05. Contact</p>
       <h2 className="text-3xl sm:text-4xl font-semibold text-white mb-4">
         Let's build something.

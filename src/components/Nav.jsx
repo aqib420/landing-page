@@ -19,47 +19,49 @@ export default function Nav() {
   }, []);
 
   return (
-    <header
-      className={`fixed top-0 inset-x-0 z-50 transition-colors ${
-        scrolled ? "bg-[#0b0c10]/90 backdrop-blur border-b border-white/10" : ""
-      }`}
-    >
-      <nav className="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#top" className="font-mono text-sm text-white tracking-tight">
-          aquib<span className="text-accent-light">.dev</span>
-        </a>
-        <ul className="hidden sm:flex gap-8 text-sm text-gray-300">
-          {LINKS.map((l) => (
-            <li key={l.href}>
-              <a href={l.href} className="hover:text-white transition-colors">
-                {l.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <button
-          className="sm:hidden text-gray-300"
-          onClick={() => setOpen((o) => !o)}
-          aria-label="Toggle menu"
-        >
-          {open ? "✕" : "☰"}
-        </button>
-      </nav>
-      {open && (
-        <ul className="sm:hidden flex flex-col gap-1 px-6 pb-4 text-gray-300 text-sm">
-          {LINKS.map((l) => (
-            <li key={l.href}>
-              <a
-                href={l.href}
-                className="block py-2"
-                onClick={() => setOpen(false)}
-              >
-                {l.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
+    <header className="fixed top-0 inset-x-0 z-50 flex justify-center">
+      <div
+        className={`w-full max-w-5xl border-x border-transparent transition-colors ${
+          scrolled ? "bg-[#0b0c10]/90 backdrop-blur border-b border-white/10" : ""
+        }`}
+      >
+        <nav className="flex items-center justify-between px-6 py-4">
+          <a href="#top" className="font-mono text-sm text-white tracking-tight">
+            aquib<span className="text-accent-light">.dev</span>
+          </a>
+          <ul className="hidden sm:flex gap-8 text-sm text-gray-300">
+            {LINKS.map((l) => (
+              <li key={l.href}>
+                <a href={l.href} className="hover:text-white transition-colors">
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <button
+            className="sm:hidden text-gray-300"
+            onClick={() => setOpen((o) => !o)}
+            aria-label="Toggle menu"
+          >
+            {open ? "✕" : "☰"}
+          </button>
+        </nav>
+        {open && (
+          <ul className="sm:hidden flex flex-col gap-1 px-6 pb-4 text-gray-300 text-sm">
+            {LINKS.map((l) => (
+              <li key={l.href}>
+                <a
+                  href={l.href}
+                  className="block py-2"
+                  onClick={() => setOpen(false)}
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </header>
   );
 }

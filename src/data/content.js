@@ -86,9 +86,9 @@ export const experience = [
     period: "Jul 2024 – Sep 2024",
     highlights: [
       {
-        title: "5+ full-stack AI applications",
+        title: "2 full-stack AI applications",
         detail:
-          "Built and deployed full-stack AI applications in an Agile/Scrum environment, focused on real-time API integration, LLM-powered features, and scalable cloud communication.",
+          "Built and deployed 2 full-stack AI applications in an Agile/Scrum environment, focused on real-time API integration, LLM-powered features, and scalable cloud communication.",
       },
     ],
   },

@@ -33,7 +33,7 @@ function ProjectCard({ project }) {
 
 export default function Projects() {
   return (
-    <section id="projects" className="px-6 max-w-5xl mx-auto py-24 border-t border-white/10">
+    <section id="projects" className="px-6 py-24 border-t border-white/10">
       <p className="font-mono text-accent-light text-sm mb-2">03. Projects</p>
       <h2 className="text-3xl font-semibold text-white mb-4">Featured Work</h2>
       <p className="text-gray-400 max-w-2xl mb-12 text-sm leading-relaxed">
