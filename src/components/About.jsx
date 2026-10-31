@@ -20,10 +20,11 @@ export default function About() {
           <div>
             <h3 className="text-white font-medium mb-2">What I focus on</h3>
             <ul className="text-gray-400 text-sm leading-relaxed space-y-2">
-              <li>Designing production LangGraph multi-agent systems</li>
-              <li>RAG pipelines and semantic search at scale</li>
-              <li>Shipping FastAPI backends with real-time streaming</li>
-              <li>Turning research (NLP, forecasting) into revenue-impacting products</li>
+              <li>Owning production AI products end-to-end: architecture, backend, deployment, client delivery</li>
+              <li>LangGraph multi-agent systems and PVER agentic workflows</li>
+              <li>RAG pipelines (Qdrant, FAISS) and MCP tool integrations</li>
+              <li>LLM security: guardrails, tenant isolation, rate limiting, readiness audits</li>
+              <li>Applied research in low-resource NLP and computer vision</li>
             </ul>
           </div>
         </div>

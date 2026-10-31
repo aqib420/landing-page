@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-24 border-t border-white/10">
       <div className="max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-16">
-        <p className="font-mono text-accent-light text-sm mb-2">04. Skills</p>
+        <p className="font-mono text-accent-light text-sm mb-2">05. Skills</p>
         <h2 className="text-3xl font-semibold text-white mb-12">Technical Skills</h2>
         <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-10">
           {skills.map((group) => (
