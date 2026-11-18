@@ -1,9 +1,17 @@
+// Listed clockwise from the top, in PVER order: Plan -> Verify -> Execute -> Review.
 const NODES = [
-  { label: "Plan", x: 220, y: 60 },
-  { label: "Execute", x: 380, y: 220 },
-  { label: "Verify", x: 220, y: 380 },
-  { label: "Review", x: 60, y: 220 },
+  { label: "Plan", side: "top", x: 220, y: 60 },
+  { label: "Verify", side: "right", x: 380, y: 220 },
+  { label: "Execute", side: "bottom", x: 220, y: 380 },
+  { label: "Review", side: "left", x: 60, y: 220 },
 ];
+
+const LABEL_BY_SIDE = {
+  top: { dx: 0, dy: -18, anchor: "middle" },
+  right: { dx: 16, dy: 4, anchor: "start" },
+  bottom: { dx: 0, dy: 28, anchor: "middle" },
+  left: { dx: -16, dy: 4, anchor: "end" },
+};
 
 const RING_PATH = "M220,60 A160,160 0 1,1 220,380 A160,160 0 1,1 220,60";
 
@@ -85,17 +93,9 @@ export default function HeroVisual() {
             />
             <circle cx={n.x} cy={n.y} r="4" fill="#0b0c10" stroke="#2dd4bf" strokeWidth="1.5" />
             <text
-              x={
-                n.label === "Execute"
-                  ? n.x + 16
-                  : n.label === "Review"
-                    ? n.x - 16
-                    : n.x
-              }
-              y={n.label === "Plan" ? n.y - 18 : n.label === "Verify" ? n.y + 28 : n.y + 4}
-              textAnchor={
-                n.label === "Execute" ? "start" : n.label === "Review" ? "end" : "middle"
-              }
+              x={n.x + LABEL_BY_SIDE[n.side].dx}
+              y={n.y + LABEL_BY_SIDE[n.side].dy}
+              textAnchor={LABEL_BY_SIDE[n.side].anchor}
               className="fill-gray-300"
               fontSize="13"
               fontFamily="ui-monospace, Consolas, monospace"
